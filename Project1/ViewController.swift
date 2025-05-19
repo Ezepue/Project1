@@ -26,7 +26,7 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
-        
+        pictures.sort() // Challenge
         print(pictures)
 
         // Do any additional setup after loading the view.
@@ -47,9 +47,10 @@ class ViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedPictureNumber = indexPath.row + 1 // Challenge
+            vc.totalPictures = pictures.count // Challenge
             navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
-
+        
 }
