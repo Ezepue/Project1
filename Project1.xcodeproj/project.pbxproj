@@ -24,6 +24,7 @@
 		04AEC3AA2DDB30B20016F886 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04AEC3A02DDB30B20016F886 /* nssl0033.jpg */; };
 		04AEC3AB2DDB30B20016F886 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 04AEC3A12DDB30B20016F886 /* nssl0034.jpg */; };
 		04AEC3B32DDB34500016F886 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC3B22DDB34500016F886 /* SceneDelegate.swift */; };
+		04AEC3B62DDB3F7E0016F886 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AEC3B52DDB3F7E0016F886 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		04AEC3A02DDB30B20016F886 /* nssl0033.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0033.jpg; sourceTree = "<group>"; };
 		04AEC3A12DDB30B20016F886 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		04AEC3B22DDB34500016F886 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		04AEC3B52DDB3F7E0016F886 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				04AEC3912DDB30930016F886 /* ViewController.swift */,
+				04AEC3B52DDB3F7E0016F886 /* DetailViewController.swift */,
 				04AEC3B22DDB34500016F886 /* SceneDelegate.swift */,
 				04AEC3942DDB30A70016F886 /* main.storyboard */,
 				04AEC37B2DDB305C0016F886 /* AppDelegate.swift */,
@@ -200,6 +203,7 @@
 				04AEC3922DDB30930016F886 /* ViewController.swift in Sources */,
 				04AEC37C2DDB305C0016F886 /* AppDelegate.swift in Sources */,
 				04AEC3B32DDB34500016F886 /* SceneDelegate.swift in Sources */,
+				04AEC3B62DDB3F7E0016F886 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
