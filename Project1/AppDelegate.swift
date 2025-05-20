@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  Project1
-//
-//  Created by Khalfani on 5/19/25.
-//
-
 import UIKit
 
 @main

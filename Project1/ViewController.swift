@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Project1
-//
-//  Created by Khalfani on 5/19/25.
-//
-
 import UIKit
 
 class ViewController: UITableViewController {
@@ -15,6 +8,8 @@ class ViewController: UITableViewController {
         
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Recommend", style: .plain, target: self, action: #selector(recommendApp))
+
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath!
@@ -52,5 +47,14 @@ class ViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    @objc func recommendApp() {
+        let message = "Hey! Check out this cool app I’m using: [Your App Name]. You can download it here: https://apps.apple.com/app/idYOUR_APP_ID"
+
+        let vc = UIActivityViewController(activityItems: [message], applicationActivities: [])
+        vc.popoverPresentationController?.barButtonItem = navigationItem.leftBarButtonItem
+        present(vc, animated: true)
+    }
+
         
 }
